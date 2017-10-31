@@ -14,31 +14,12 @@ h1 {
   color: #E34E45;
 ;
   font-family:  'Archivo Black', sans-serif;
-  margin-top: 100px;
+  margin-top: 60px;
 }
 #heading p {
 	text-align: center;
   font-family: 'Roboto Mono', monospace;
 }
-
-
-/**********************
-Table Background
-***********************/
-
-.container {
-  margin-top: 50px
-}
-
-/*div.box {
-this div is not working...
-    width: 500px;
-    height: 500px;
-    padding: 35px;
-    margin:0px auto;
-    border-radius: 15px;
-
-}*/
 
 
 /**********************
@@ -51,19 +32,19 @@ Seating Tables
   height: 500px;
   margin: auto;
   margin-top: 60px;
+  margin-bottom: 60px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   border-radius: 2%;
+  padding: 0px 50px;
 
 
 }
 
 .flex-item {
   border-radius: 100px;
-  text-align: center;
   margin: 20px 30px 0 30px;
-  text-align: center;
 
 }
 
@@ -74,7 +55,9 @@ Seating Tables
 
   height: 100px;
   width: 100px;
-  text-align: center;
+  line-height: 100px;
+
+
 
 }
 
@@ -91,15 +74,15 @@ Seating Tables
 Reservation information prompt
 ***********************/
 
-.box {
-	background-color: blue;
+form {
+	background-color: white;
 	text-align: left;
 	width: 500px;
   height: 350px;
 
 	font-family: 'Roboto Mono', monospace;
-	margin-left: 15.5%;
-	margin-top: -46%;
+	margin-left: 32%;
+	margin-top: -35%;
 
 	display: none;
 	z-index: 2;
@@ -113,6 +96,10 @@ Reservation information prompt
 
 form p {
 	font-family: 'Roboto Mono', monospace;
+}
+
+h4 {
+  color: red;
 }
 
 input {
