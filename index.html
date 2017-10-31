@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>jQuery Demo</title>
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
@@ -10,13 +11,14 @@
   </head>
 
   <body>
-
+    <div id="heading">
       <h1>Table Finder</h1>
       <p>Please pick your table</p>
+    </div>
 
 
     <!-- Table reservation setup -->
-    <div id="flex-container">
+    <div class="flex-container">
       <div class="flex-item circle available">1</div>
       <div class="flex-item circle available">2</div>
       <div class="flex-item circle available">3</div>
@@ -30,7 +32,7 @@
 
 
     <!-- Table reservation info & prompt -->
-    <form>
+    <form class="box">
       <i class="material-icons">close</i>
       <h4>New Reservation</h4>
       <p id="tableNum"></p>
