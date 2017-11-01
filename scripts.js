@@ -22,7 +22,7 @@ $(document).ready(function() {
 
 	});
 
-// functions to display reserve information
+// functions to close out reserve information
 	$("i").on("click", function(e) {
 		$("form").css("display", "none");
 	});
