@@ -12,13 +12,13 @@ body {
 
 h1 {
   color: #E34E45;
-;
   font-family:  'Archivo Black', sans-serif;
   margin-top: 60px;
 }
 #heading p {
 	text-align: center;
   font-family: 'Roboto Mono', monospace;
+  font-weight: bold;
 }
 
 
