@@ -17,17 +17,39 @@ $(document).ready(function() {
 
 			e.preventDefault();
 			return $("div .circle:contains("+ tableNum.toString() + ")").removeClass("available").addClass("reserved");
-//.removeClass("available").addClass("reserved") - this will mark tables with secondary color from css
+//.removeClass("available").addClass("reserved") - this will mark tables with secondary color from css after given a new class.
+
 		});
 
 	});
 
-// functions to close out reserve information
-	$("i").on("click", function(e) {
-		$("form").css("display", "none");
+
+	$("#reservation").on("click", function() {
+		if ($(".circle.available")) {
+			tableNowReserved.removeClass("available").addClass("reserved");
+			var tableNum = $(tableNowReserved).attr("data-tablenum");
+			console.log(tableNum);
+			var guestName = $("#name").val();
+			var seats = $("#seats").val();
+
+			reservedTables[elementIndex] = new Table(guestName, seats, tableNum);
+
+			$("form").fadeOut("slow");
+		}
 	});
 
-	$(".circle reserved").on("click", function() {
+
+	$(".circle").mouseover(function() {
+	if ($(this).hasClass("reserved")) {
+		console.log(reservedTables);
+		console.log(this);
+		var box = $(this).after("<div class='box'>Name: " + reservedTables[elementIndex].name + " Seats: " + reservedTables[elementIndex].seats + "</div>" )
+
+	}
+});
+
+// functions to close out reserve information (the "X" button)
+	$("i").on("click", function(e) {
 		$("form").css("display", "none");
 	});
 
